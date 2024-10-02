@@ -93,7 +93,19 @@ if (Q.dissent < 0) {
 } else if (Q.dissent > 0.95) {
     Q.dissent = 0.95;
 }
-
+if (Q.month == 2 and Q.year == 1928 and (Q.centrists_resign + Q.left_split + Q.reformists_resign + Q.unions_independent != 4)) {
+    Q.left_strength = 15;
+    Q.left_dissent = 60;
+    Q.center_strength = 30;
+    Q.center_dissent = 60;
+    Q.labor_strength = 25;
+    Q.labor_dissent = 60;
+    Q.reformist_strength = 25;
+    Q.reformist_dissent = 60;
+    Q.neorevisionist_strength = 5;
+    Q.neorevisionist_dissent = 10;
+    Q.resources += 1;
+}
 // 1. update dates
 if (Q.month_actions >= 1) {
     Q.time += 1;
