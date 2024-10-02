@@ -93,7 +93,7 @@ if (Q.dissent < 0) {
 } else if (Q.dissent > 0.95) {
     Q.dissent = 0.95;
 }
-if ((Q.centrists_resign == 0) or (Q.left_split == 0) or (Q.reformists_resign == 0) or (Q.unions_independent == 0))) {
+if ((Q.centrists_resign == 0) or (Q.left_split == 0) or (Q.reformists_resign == 0) or (Q.unions_independent == 0)) {
     Q.left_strength = 15;
     Q.left_dissent = 60;
     Q.center_strength = 30;
